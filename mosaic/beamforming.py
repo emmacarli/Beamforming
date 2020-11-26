@@ -306,6 +306,11 @@ class Tiling(object):
         equatorial_range = [
             coordinates_equatorial[0][0], coordinates_equatorial[1][0], # left, right
             coordinates_equatorial[0][1], coordinates_equatorial[1][1]] # up, bottom
+
+	width = equatorial_range[1] - equatorial_range[0]
+	height = equatorial_range[3] - equatorial_range[2]
+	print("Size of tiling coverage: "+str(width) + " deg wide, " + str(height) + " deg height.")	
+
         pixel_range = [upper_left_pixel[0], bottom_right_pixel[0], # left, right
                        upper_left_pixel[1], bottom_right_pixel[1]] # up, bottom
         plotPackedBeam(self.coordinates, self.beam_shape.angle, widthH, widthV,
