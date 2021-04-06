@@ -40,8 +40,8 @@ def creatBeamMatrix(antennaCoords, sourceCoord, observeTime,
     beamShape = psf.get_beam_shape(boresight, observeTime)
     beamShape.plot_psf("beamWithFit.png", shape_overlay=True)
     # beamShape.plot_psf("beam.png", shape_overlay=False)
-    # beamShape.psf.write_fits('psf.fits')
-    # beamShape.plot_interferometry("interferometry.png")
+    beamShape.psf.write_fits('psf.fits')
+    beamShape.plot_interferometry("interferometry.png")
 
 
     # margin = max(int(beamNum * 0.25), 16)
