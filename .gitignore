@@ -17,3 +17,11 @@ mosaic.egg-info/PKG-INFO
 mosaic.egg-info/requires.txt
 mosaic.egg-info/SOURCES.txt
 mosaic.egg-info/top_level.txt
+mosaic/utilities.pyc
+mosaic/tile.pyc
+mosaic/plot.pyc
+mosaic/interferometer.pyc
+mosaic/coordinate.pyc
+mosaic/beamshape.pyc
+mosaic/beamforming.pyc
+mosaic/__init__.pyc
